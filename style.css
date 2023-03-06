@@ -1,0 +1,330 @@
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+.container {
+  background-image: linear-gradient(to right, #f1f0efec, #adaddbd7), url(background.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  background-color: rgb(247, 241, 241);
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  padding: 3rem;
+  /* border: 2px solid green; */
+}
+
+.first-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-bottom: 2rem;
+  /* border: 2px solid green; */
+}
+
+@media screen and (min-width: 320px) and (max-width: 835px) {
+  .first-section {
+    margin-bottom: .1rem;
+
+  }
+}
+
+
+.start-game {
+  border-radius: 5px;
+  text-align: center;
+  background-color: rgb(107, 238, 107);
+  /* border: 3px solid green; */
+  width: 12rem;
+  height: 3rem;
+  opacity: 0;
+  /* opacity: 0; */
+}
+
+@media screen and (min-width: 320px) and (max-width: 835px) {
+  .start-game {
+    width: 7rem;
+    height: 2rem;
+
+  }
+}
+
+
+
+.start-new {
+  /* opacity: 0; */
+  opacity: 0;
+}
+
+.click-to-start {
+  border-radius: 5px;
+  background-color: green;
+  font-size: 2rem;
+  color: white;
+  /* opacity: 0; */
+  opacity: 0;
+}
+
+@media screen and (min-width: 320px) and (max-width: 835px) {
+  .click-to-start {
+    font-size: 1.3rem;
+  }
+}
+
+.welcome-text {
+
+  color: blue;
+  font-size: 2rem;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+@media screen and (min-width: 320px) and (max-width: 835px) {
+  .welcome-text {
+    font-size: 1.3rem;
+  }
+}
+
+.logger {
+  font-size: 2rem;
+  color: green;
+}
+
+.second-section {
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+@media screen and (min-width: 320px) and (max-width: 835px) {
+  .second-section {
+    margin-bottom: .1rem;
+  }
+}
+
+input {
+  font-size: 1.5rem;
+  width: 30rem;
+  background-color: rgb(247, 209, 209);
+  border-left: 1px grey;
+  border-right: 1px grey;
+  border-top: 1px grey;
+  padding: 1.5rem;
+  border-bottom: 3px solid rgb(221, 82, 82);
+
+}
+
+@media screen and (min-width: 320px) and (max-width: 835px) {
+  input {
+    font-size: 1.3rem;
+    width: 15rem;
+  }
+}
+
+.log-number-prompt {
+  background-color: rgb(5, 85, 3);
+  padding: 1rem;
+  width: fit-content;
+  height: 2rem;
+  border: 2px solid green;
+  /* opacity: 0; */
+  opacity: 0;
+
+}
+
+.logger {
+  /* color: rgb(247, 247, 248); */
+  color: white;
+  font-size: 1.7rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.third-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-bottom: 5rem;
+  /* border: 2px solid green; */
+
+  /* opacity: 0; */
+  opacity: 0;
+
+}
+
+@media screen and (min-width: 320px) and (max-width: 835px) {
+  .third-section {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 130vh;
+    margin-bottom: .1rem;
+  }
+}
+
+
+.check-guess-cont {
+  /* border: 1px solid rgb(43, 167, 5); */
+  text-align: center;
+}
+
+.guess-number {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  width: 20rem;
+  height: 3.6rem;
+  border: 6px solid green;
+  margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 320px) and (max-width: 835px) {
+  .guess-number {
+    width: 10rem;
+    height: 1.5rem;
+    font-size: 1rem;
+    margin-bottom: .1rem;
+
+  }
+}
+
+.game-resets {
+  /* border: 2px solid green; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.start-new-game {
+  /* opacity: 0; */
+  opacity: 0;
+}
+
+.secret-no {
+  /* border: 1px solid rgb(218, 114, 30); */
+  text-align: center;
+}
+
+
+
+
+.view-secret-num {
+  opacity: 0.3;
+  font-size: 2rem;
+  color: rgb(168, 163, 163);
+  font-weight: bold;
+}
+
+@media screen and (min-width: 320px) and (max-width: 835px) {
+  .view-secret-num {
+    font-size: 1.4rem;
+
+  }
+}
+
+.secret-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(43, 21, 21);
+  width: 20rem;
+  height: 6rem;
+  border: 7px solid rgb(20, 17, 211);
+  margin-bottom: 1rem;
+
+}
+
+@media screen and (min-width: 320px) and (max-width: 835px) {
+  .secret-box {
+    width: 12rem;
+    height: 3rem;
+
+  }
+}
+
+.fourth-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+@media screen and (min-width: 320px) and (max-width: 835px) {
+  .fourth-section {
+    flex-direction: column-reverse;
+
+  }
+}
+
+
+.instruction {
+  font-size: 1.5rem;
+  color: blue;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+@media screen and (min-width: 320px) and (max-width: 835px) {
+  .instruction {
+    font-size: 1.3rem;
+
+  }
+}
+
+
+
+.impt-txt {
+  color: red;
+
+}
+
+
+
+.comment {
+  font-style: italic;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  /* opacity: 0; */
+  opacity: 0;
+  font-size: 1.4rem;
+  color: rgb(15, 2, 49);
+}
+
+.timer-box {
+  margin-bottom: 1rem;
+}
+
+.timer-text {
+  color: red;
+  font-size: 3rem;
+
+}
+
+@media screen and (min-width: 320px) and (max-width: 835px) {
+  .timer-text {
+    font-size: 1.7rem;
+  }
+}
+
+button {
+  border-radius: 5px;
+  font-size: 1.3rem;
+  border: none;
+  padding: 0.5rem;
+  color: white;
+  background-color: rgb(2, 2, 59);
+}
+
+@media screen and (min-width: 320px) and (max-width: 835px) {
+  button {
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+    padding: 0.2rem;
+
+  }
+}
+
+/* . background-image: url(port-background.avif); */

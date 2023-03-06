@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Fastest Guess Game</title>
+</head>
+
+<body>
+  <div class="container">
+
+    <div class="first-section">
+      <div class="title-box">
+        <p class="welcome-text">Fastest Guess Game</p>
+      </div>
+
+      <div class="start-game">
+        <button class="click-to-start">Start Game</button>
+      </div>
+
+      <div class="logger">
+        <p class="logger"></p>
+      </div>
+    </div>
+
+    <div class="second-section">
+      <form class="form">
+        <input type="text" class="firstN" id="firstNumber" placeholder=" Enter Your Name to Play :" />
+        <button class="btn-div">Submit</button>
+        <!-- <input type="button" class="btn-div" Value="Submit" /> -->
+      </form>
+
+
+    </div>
+
+    <div class="third-section">
+      <div class="check-guess-cont">
+
+        <input type="number" class="guess-number" id="guessNumber" placeholder=" Enter your guess here" /><br>
+
+        <button class="check-button">Check-guess</button>
+      </div>
+      <div class="game-resets">
+        <div class="new-guess">
+          <button class="start-new">Continue Playing..</button>
+        </div>
+
+        <div class="new-game">
+          <button type="button" onclick="window.location.reload()" class="start-new-game">New Game</button>
+        </div>
+      </div>
+
+
+      <div class="secret-no">
+        <div class="secret-box">
+          <p class="view-secret-num">Secret Number</p>
+        </div>
+        <div class="comment-box">
+          <p class="comment">Very Low!</p>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="fourth-section">
+      <div class="intro-box">
+        <p class="instruction">Guess the correct <span class="impt-txt">Secret number(BTW 1-20)</span> <br>five times
+          within 90 seconds to win</p>
+      </div>
+
+      <!-- <div class="comment-box">
+        <p class="comment">Very Low!</p>
+      </div> -->
+
+      <div class="timer-box">
+        <p class="timer-text">Timer: 00:00</p>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="style.js"></script>
+</body>
+
+</html>
